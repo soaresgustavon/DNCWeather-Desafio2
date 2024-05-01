@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DNC Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    Testando commit's
+    
+    <!--PRIMEIRO CONTAINER-->
+    <container>
+        <div id="navbar">
+            <h1 id="nav1">DncWeather</h1>
+            <h2 id="nav2">Endereços</h2>
+            <h2 id="nav3">Previsão do tempo</h2>
+        </div>
+    </container>
+
+    <!--SEGUNDO CONTAINER-->
+    <container>
+        <div id="description">
+            <h1 id="description-text">Descubra Mais com Precisão: <br>
+                Previsões do Tempo e endereços <br>   
+                em tempo real.
+            </h1>
+
+            <img id="description-img" src="previsão.svg">
+        </div>
+    </container>
+
+    <!--TERCEIRO CONTAINER-->
+    <container>
+        <form id="formulario" action="processar-dados" method="post">
+
+            <label for="nome">Primeiro Nome:</label>
+            <input class="inputs" type="text" id="nome" name="nome" placeholder="Insira seu primeiro nome"><br>
+
+            <label for="e-mail">E-mail:</label>
+            <input class="inputs" type="email" id="e-mail" name="e-mail" placeholder="Insira seu e-mail"><br>
+
+            <label for="CEP">Digite o CEP:</label>
+            <input class="inputs" type="number" id="CEP" name="CEP" placeholder="Insira seu CEP"><br>
+
+            <label for="nome">Digite a latitude e longitude para saber a previsão:</label><br>
+        <div id="lat-lon">
+            <input class="lat-lon-input" type="number" id="lat" name="lat" placeholder="Latitude">
+            <input class="lat-lon-input" type="number" id="lon" name="lon" placeholder="Longitude">
+        </div>
+
+        <button type="submit">Acessar</button>
+            
+
+        </form>
+    </container>
+
 </body>
 </html>
