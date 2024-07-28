@@ -95,7 +95,7 @@ body{
 ::placeholder{
     font-family: inter;
     padding: 25px;
-    color: #39393957:
+    color: #39393957;
 }
 
 button{
@@ -109,4 +109,19 @@ button{
     font-weight: bold;
     color: #FFFFFF;
     font-size: 20px;
+}
+
+h1{
+    font-family: inter;
+    margin-top: 80px;
+}
+
+#container-3{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px; 
+}
+
+#point-img{
+    margin-left: 40px;
 }
